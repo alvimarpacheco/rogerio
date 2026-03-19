@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>R Construções | Obras na Grande São Paulo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #0f172a;
+    --accent: #22c55e;
+    --gray: #64748b;
+    --light: #f8fafc;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: white;
+    color: var(--primary);
+}
+
+/* NAV */
+nav {
+    position: sticky;
+    top:0;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 20px;
+    border-bottom:1px solid #eee;
+    z-index:1000;
+}
+
+nav strong {
+    font-weight:700;
+}
+
+nav a {
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:500;
+}
+
+/* HERO */
+.hero {
+    padding:100px 20px;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('obra.jpg') center/cover no-repeat;
+    color:white;
+}
+
+.hero h1 {
+    font-size:28px;
+    max-width:700px;
+    margin:auto;
+}
+
+.hero p {
+    margin-top:15px;
+    color:#e2e8f0;
+}
+
+.btn {
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 25px;
+    background:var(--accent);
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.2s;
+}
+
+.btn:hover {
+    transform:scale(1.05);
+}
+
+/* SECTION */
+.section {
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.section h2 {
+    font-size:24px;
+    margin-bottom:30px;
+}
+
+/* GRID */
+.grid {
+    display:grid;
+    gap:20px;
+}
+
+.card {
+    padding:25px;
+    border-radius:12px;
+    background:#f9fafb;
+    transition:.2s;
+}
+
+.card:hover {
+    transform:translateY(-5px);
+}
+
+/* GALLERY */
+.gallery {
+    display:grid;
+    gap:10px;
+}
+
+.gallery img {
+    width:100%;
+    border-radius:10px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    background:#f1f5f9;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* CTA */
+.cta {
+    text-align:center;
+    padding:80px 20px;
+    background:var(--primary);
+    color:white;
+}
+
+/* WHATS */
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:var(--accent);
+    color:white;
+    padding:16px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+}
+
+/* RESPONSIVO */
+@media(min-width:768px){
+
+.hero h1 {font-size:42px;}
+
+.grid {
+    grid-template-columns:repeat(3,1fr);
+}
+
+.gallery {
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<strong>R Construções</strong>
+<a href="https://wa.me/5511932585638">WhatsApp</a>
+</nav>
+
+<section class="hero">
+<h1>Construção completa com padrão profissional e responsabilidade técnica</h1>
+<p>Atendemos toda Grande São Paulo • Nota Fiscal • ART</p>
+<a class="btn" href="https://wa.me/5511932585638">Solicitar Orçamento</a>
+</section>
+
+<section class="section">
+<h2>Serviços</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Construção Completa</h3>
+<p>Da fundação ao acabamento final.</p>
+</div>
+
+<div class="card">
+<h3>Acabamentos</h3>
+<p>Pintura, drywall, gesso e revestimentos.</p>
+</div>
+
+<div class="card">
+<h3>Instalações</h3>
+<p>Elétrica e hidráulica profissional.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+<h2>Obras Realizadas</h2>
+
+<div class="gallery">
+<img src="1.jpg">
+<img src="2.jpg">
+<img src="3.jpg">
+<img src="4.jpg">
+<img src="5.jpg">
+<img src="6.jpg">
+</div>
+
+</section>
+
+<section class="section">
+<h2>Depoimentos</h2>
+
+<div class="grid">
+
+<div class="testimonial">
+<p>“Serviço organizado e entregue no prazo.”</p>
+<strong>— Cliente, Osasco</strong>
+</div>
+
+<div class="testimonial">
+<p>“Equipe profissional, recomendo.”</p>
+<strong>— Cliente, Barueri</strong>
+</div>
+
+<div class="testimonial">
+<p>“Fizeram toda minha obra.”</p>
+<strong>— Cliente, São Paulo</strong>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+<h2>Solicite seu orçamento agora</h2>
+<a class="btn" href="https://wa.me/5511932585638">Falar no WhatsApp</a>
+</section>
+
+<a class="whatsapp" href="https://wa.me/5511932585638">💬</a>
+
+</body>
+</html>
