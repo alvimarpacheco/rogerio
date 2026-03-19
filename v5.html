@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rogerinho Construções</title>
+
+<style>
+body {
+    margin:0;
+    font-family:Arial;
+    background:#f5f5f5;
+}
+
+/* NAV */
+nav {
+    background:#111;
+    color:#fff;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav a {
+    color:#fff;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero {
+    background:url('obra.jpg') center/cover no-repeat;
+    padding:80px 20px;
+    text-align:center;
+    color:#fff;
+    background-color:rgba(0,0,0,0.7);
+    background-blend-mode:overlay;
+}
+
+.hero h1 {
+    font-size:26px;
+}
+
+.btn {
+    background:#25D366;
+    color:#fff;
+    padding:15px 25px;
+    display:inline-block;
+    margin-top:20px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+/* SECTIONS */
+.section {
+    padding:40px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.grid {
+    display:grid;
+    gap:20px;
+}
+
+.card {
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+.gallery {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+}
+
+.gallery img {
+    width:100%;
+    border-radius:5px;
+}
+
+/* WHATS FLOAT */
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+}
+
+/* RESPONSIVO */
+@media(min-width:768px){
+
+.hero h1 {font-size:40px;}
+
+.grid {
+    grid-template-columns:repeat(3,1fr);
+}
+
+.gallery {
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div>Rogerinho Construções</div>
+<a href="https://wa.me/5511932585638">WhatsApp</a>
+</nav>
+
+<section class="hero">
+<h1>Construção com qualidade e responsabilidade técnica</h1>
+<p>Atendemos toda Grande São Paulo</p>
+<a class="btn" href="https://wa.me/5511932585638">Solicitar Orçamento</a>
+</section>
+
+<section class="section">
+<h2>Serviços</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Construção Completa</h3>
+<p>Fundação até acabamento</p>
+</div>
+
+<div class="card">
+<h3>Acabamentos</h3>
+<p>Pintura, gesso e drywall</p>
+</div>
+
+<div class="card">
+<h3>Instalações</h3>
+<p>Elétrica e hidráulica</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+<h2>Diferenciais</h2>
+
+<div class="grid">
+
+<div class="card">✔ ART</div>
+<div class="card">✔ Nota Fiscal</div>
+<div class="card">✔ Equipe Profissional</div>
+
+</div>
+
+</section>
+
+<section class="section">
+<h2>Obras Realizadas</h2>
+
+<div class="gallery">
+<img src="1.jpg">
+<img src="2.jpg">
+<img src="3.jpg">
+<img src="4.jpg">
+<img src="5.jpg">
+<img src="6.jpg">
+</div>
+
+</section>
+
+<section class="section" style="text-align:center;">
+<h2>Solicite um orçamento agora</h2>
+<a class="btn" href="https://wa.me/5511932585638">Falar no WhatsApp</a>
+</section>
+
+<a class="whatsapp" href="https://wa.me/5511932585638">💬</a>
+
+</body>
+</html>
