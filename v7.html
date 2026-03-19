@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rogerinho Construções | Obras e Reformas em SP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏗️</text></svg>">
+  
+  <style>
+    html { font-size: 100%; -webkit-text-size-adjust: 100%; }
+    body { touch-action: manipulation; margin: 0; }
+    
+    .hero-bg {
+      background-image: url('https://via.placeholder.com/1920x900/15803d/ffffff?text=Fachada+Verde+Rogerinho');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    @media (max-width: 640px) {
+      .hero-bg { min-height: 70vh; }
+      h1 { font-size: 2.25rem; line-height: 1.1; }
+      .text-3xl { font-size: 1.5rem; }
+      section { padding-top: 4rem; padding-bottom: 4rem; }
+      .px-6 { padding-left: 1rem; padding-right: 1rem; }
+    }
+    
+    .pulse { animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+  <!-- Navbar fixa (mais leve em mobile) -->
+  <nav class="bg-white shadow fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <svg width="40" height="40" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="5" y="10" width="45" height="35" rx="8" fill="#15803d"/>
+          <path d="M15 20 L25 35 L40 20" stroke="white" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <span class="text-xl sm:text-2xl font-bold text-[#15803d]">Rogerinho Construções</span>
+      </div>
+      <a href="https://wa.me/5511932585638?text=Ol%C3%A1%2C%20quero%20or%C3%A7amento!" 
+         class="bg-green-600 text-white px-5 py-2.5 rounded-full text-base font-medium flex items-center gap-2 pulse">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero ajustado para mobile -->
+  <section class="hero-bg min-h-[70vh] sm:min-h-screen flex items-center justify-center text-white relative">
+    <div class="absolute inset-0 bg-black/65"></div>
+    <div class="relative z-10 text-center px-4 sm:px-6 pt-20">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 md:mb-6">Da fundação ao acabamento final</h1>
+      <p class="text-lg sm:text-2xl mb-6 md:mb-10 max-w-xl mx-auto">Obras completas com Nota Fiscal, RT/ART e equipe uniformizada.</p>
+      <a href="https://wa.me/5511932585638?text=Ol%C3%A1%20Rogerinho%2C%20quero%20or%C3%A7amento%20agora!" 
+         class="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-full text-xl font-bold inline-flex items-center gap-3 pulse">
+        <i class="fab fa-whatsapp text-2xl"></i> Orçamento Grátis
+      </a>
+    </div>
+  </section>
+
+  <!-- Sobre (reduzido em mobile) -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-8">Por que escolher a Rogerinho Construções?</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-gray-50 rounded-xl">
+          <i class="fas fa-hard-hat text-5xl text-green-600 mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Equipe Uniformizada</h3>
+          <p>Profissionais identificados e respeitosos.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-xl">
+          <i class="fas fa-file-invoice text-5xl text-green-600 mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Nota Fiscal + RT/ART</h3>
+          <p>Transparência total em todas as obras.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-xl">
+          <i class="fas fa-tools text-5xl text-green-600 mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Obra Completa</h3>
+          <p>Da fundação ao acabamento final.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfólio com lightbox (placeholders para suas fotos) -->
+  <section id="portfolio" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8">Nossos Projetos</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <!-- Substitua src e href pelas suas imagens hospedadas (ImgBB) -->
+        <a href="https://via.placeholder.com/800x600?text=Fachada+Verde" class="lightbox-image block rounded-lg overflow-hidden shadow">
+          <img src="https://via.placeholder.com/400x300?text=Fachada+Verde" alt="Fachada verde" class="w-full h-auto">
+        </a>
+        <a href="https://via.placeholder.com/800x600?text=Quarto+LED" class="lightbox-image block rounded-lg overflow-hidden shadow">
+          <img src="https://via.placeholder.com/400x300?text=Quarto+LED" alt="Quarto LED" class="w-full h-auto">
+        </a>
+        <!-- Adicione mais conforme suas fotos reais -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5511932585638?text=Ol%C3%A1%20Rogerinho%2C%20vi%20seu%20site!" 
+     class="fixed bottom-6 right-6 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl pulse z-50">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    const lightbox = GLightbox({ selector: '.lightbox-image' });
+  </script>
+</body>
+</html>
